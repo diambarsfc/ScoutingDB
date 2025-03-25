@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// const apiUrl = "https://intrepidscouting.onrender.com";
-const apiUrl = "http://localhost:3000";
+const apiUrl = "https://diambarsscouting.onrender.com";
+//const apiUrl = "http://localhost:3000";
  
 
 // Base URL for your backend API 
