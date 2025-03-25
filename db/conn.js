@@ -8,7 +8,7 @@ module.exports = {
     connectToMongoDB: async function (callback) {
         try {
             await client.connect()
-            _db = client.db("BlueCo")
+            _db = client.db("Diambars")
             console.log("Successfully connected to MongoDB.")
             
             return callback(null)
