@@ -5,6 +5,19 @@ import Dashboard from "./components/Dashboard";  // A placeholder page for after
 import ProtectedRoute from "./components/ProtectedRoute";
 
 const App = () => {
+  useEffect(() => {
+    const tryTranslate = () => {
+      const select = document.querySelector("select.goog-te-combo");
+      if (select) {
+        select.value = 'fr'; // Set to French
+        select.dispatchEvent(new Event("change"));
+      } else {
+        setTimeout(tryTranslate, 500); // Retry until available
+      }
+    };
+
+    tryTranslate();
+  }, []);
 
   return (
     <Router>
